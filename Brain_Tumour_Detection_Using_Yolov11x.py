@@ -40,7 +40,7 @@ def draw_bounding_boxes(image_path, response):
 
 # Define the API request
 url = "https://predict.ultralytics.com"
-headers = {"x-api-key": "f26185fc36c0c08d7ea24ff1504bc91871f3c6d055"}
+headers = {"x-api-key": "API KEY"}
 data = {
     "model": "https://hub.ultralytics.com/models/OtSQgcctEkvOMxFGdklK",
     "imgsz": 640,
