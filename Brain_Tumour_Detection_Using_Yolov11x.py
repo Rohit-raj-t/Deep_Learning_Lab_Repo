@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
 import requests
-import json
 
 # Define the function to draw bounding boxes
 def draw_bounding_boxes(image_path, response):
@@ -49,7 +48,7 @@ data = {
 }
 
 # Open and send the image for inference
-image_path = "brain.jpg"
+image_path = "brain2.jpg"
 with open(image_path, "rb") as f:
     response = requests.post(url, headers=headers, data=data, files={"file": f})
 response.raise_for_status()
